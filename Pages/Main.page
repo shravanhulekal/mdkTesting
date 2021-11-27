@@ -1,0 +1,84 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"Value": "/MDk_ErrorArchive/Rules/GetCoordinates.js",
+							"_Name": "KeyValue0",
+							"KeyName": "Coordo",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "PurchaseOrderHeaders",
+							"TextAlignment": "center",
+							"OnPress": "/MDk_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "PurchaseOrderItems",
+							"TextAlignment": "center",
+							"OnPress": "/MDk_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action"
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Show Error Archive",
+							"TextAlignment": "center",
+							"Visible": true,
+							"Style": "MyCustomerButton",
+							"OnPress": "/MDk_ErrorArchive/Actions/ShowErrorListPage.action"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "LogoutToolbarItem",
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/MDk_ErrorArchive/Actions/Logout.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UploadToolbarItem",
+				"Caption": "Sync",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDk_ErrorArchive/Actions/Service/SyncStartedMessage.action"
+			}
+		]
+	}
+}

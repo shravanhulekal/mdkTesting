@@ -1,0 +1,20 @@
+{
+    "Service": "/MDk_ErrorArchive/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/MDk_ErrorArchive/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/MDk_ErrorArchive/Actions/Service/InitializeOfflineFailureMessage.action"
+}
