@@ -1,0 +1,27 @@
+{
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "MyMapModule",
+	"Control": "MyMapExtention",
+	"Class": "MyMapClass",
+	"Display": "/MDk_ErrorArchive/Images/map.png",
+	"ExtensionPropertiesSchema": {
+		"type": "object",
+		"BindType": "",
+		"properties": {
+			"Prop": {
+				"type": "object",
+				"BindType": "",
+				"properties": {
+					"Lat": {
+						"type": "float",
+						"BindType": ""
+					},
+					"Long": {
+						"type": "float",
+						"BindType": ""
+					}
+				}
+			}
+		}
+	}
+}
