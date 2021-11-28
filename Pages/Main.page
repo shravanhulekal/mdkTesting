@@ -60,11 +60,16 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Height": 600,
 					"Module": "MyMapModule",
 					"Control": "MyMapExtention",
 					"Class": "MyMapClass",
 					"ExtensionProperties": {
 						"Prop": {
+							"City": "{Address/City}",
+							"Country": "{Address/Country}",
+							"HouseNumber": "{Address/HouseNumber}",
+							"LastName": "{LastName}"
 						}
 					}
 				}

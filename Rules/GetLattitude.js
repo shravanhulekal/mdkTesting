@@ -1,7 +1,7 @@
 import * as geolocation from "@nativescript/geolocation";
 import { CoreTypes } from "@nativescript/core";
 
-export default async function GetCoordinates(context) {
+export default async function GetLattitude(context) {
     var logger = context.getLogger();
 
     console.log("Current Log Level: " + logger.getLevel());

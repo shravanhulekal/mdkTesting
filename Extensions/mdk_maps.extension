@@ -12,12 +12,28 @@
 				"type": "object",
 				"BindType": "",
 				"properties": {
-					"Lat": {
-						"type": "float",
+					"City": {
+						"type": "string",
 						"BindType": ""
 					},
-					"Long": {
-						"type": "float",
+					"Country": {
+						"type": "string",
+						"BindType": ""
+					},
+					"HouseNumber": {
+						"type": "string",
+						"BindType": ""
+					},
+					"LastName": {
+						"type": "string",
+						"BindType": ""
+					},
+					"PostalCode": {
+						"type": "string",
+						"BindType": ""
+					},
+					"Street": {
+						"type": "string",
 						"BindType": ""
 					}
 				}
